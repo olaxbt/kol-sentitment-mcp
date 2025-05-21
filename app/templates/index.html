@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOL Sentiment MCP</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #007bff;
+        }
+        h1 {
+            color: #007bff;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .feature-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .feature-list li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        .feature-list li:before {
+            content: "✓";
+            color: #28a745;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .endpoint {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 3px;
+            font-family: monospace;
+            margin: 5px 0;
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.8em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>KOL Sentiment MCP</h1>
+        <p>Model Context Protocol for Key Opinion Leader Analysis</p>
+        <p><small>Version: {{ version }}</small></p>
+    </header>
+
+    <div class="container">
+        <h2>Overview</h2>
+        <p>KOL Sentiment MCP provides a standardized Model Context Protocol interface for AI assistants to analyze Key Opinion Leaders (KOLs) on social media platforms. It leverages the Masa AI API for powerful semantic search and data retrieval.</p>
+        
+        <h2>Features</h2>
+        <ul class="feature-list">
+            <li>Search KOL content across platforms</li>
+            <li>Analyze sentiment of KOL posts</li>
+            <li>Extract trending topics from KOL content</li>
+            <li>Generate comprehensive KOL sentiment analysis</li>
+            <li>Identify trends across multiple KOLs</li>
+            <li>Both live and historical data analysis</li>
+        </ul>
+        
+        <h2>API Endpoints</h2>
+        <div class="endpoint">GET /health - Health check endpoint</div>
+        <div class="endpoint">GET /api/mcp/ping - MCP API health check</div>
+        <div class="endpoint">POST /api/mcp/query - Main MCP query endpoint</div>
+        
+        <h2>Supported Actions</h2>
+        <ul>
+            <li><code>kol.search</code> - Search for KOL content</li>
+            <li><code>kol.sentiment</code> - Analyze KOL content sentiment</li>
+            <li><code>kol.topics</code> - Extract topics from KOL content</li>
+            <li><code>kol.sentiment_analysis</code> - Get comprehensive KOL sentiment analysis</li>
+            <li><code>kol.trends</code> - Analyze trends across multiple KOLs</li>
+        </ul>
+    </div>
+    
+    <footer>
+        <p>KOL Sentiment MCP &copy; 2023 | Powered by <a href="https://developers.masa.ai/docs/index-API/indexed-search" target="_blank">Masa AI API</a></p>
+    </footer>
+</body>
+</html> 
